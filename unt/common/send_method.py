@@ -43,6 +43,5 @@ if __name__ == '__main__':
     #         "pageSize": "10"}
     headers = {"Content-Type": "application/json;charset=UTF-8",
                "token": to}
-    to = r["data"]["token"]
     res = Sendmethon.send_method(method=method, url=url, headers=headers)
     print(res)
