@@ -34,7 +34,7 @@ if __name__ == '__main__':
     # 查询
     url = "http://122.226.7.83:8002/ztc-corp-api/admin/modules/info/getListByPage?title=%E6%B5%8B%E8%AF%9511&createTimeStart=&createTimeEnd=&typeId=&pageIndex=1&pageSize=10"
     method = "post"
-    to = r["data"]["token"]
+    to = r["data"]["token"]  # 获取token
     # json = {"title": "测试",
     #         "createTimeStart": "",
     #         "createTimeEnd": "",
