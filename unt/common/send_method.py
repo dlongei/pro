@@ -3,7 +3,7 @@ import json
 import jsonpath
 
 
-class Sendmethon:
+class Sendmethod:
 
     @staticmethod
     def send_method(method, url, params=None, data=None, headers=None):
