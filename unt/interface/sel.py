@@ -14,14 +14,14 @@ class Select_name:
         # 登录系统，获取token
         url = "http://122.226.7.83:8002/ztc-corp-api/account/login?loginName=ztc_corp&loginPwd=123456&accountType=1"
         method = "post"
-        r = Sendmethon.send_method(method=method, url=url)
+        r = Sendmethod.send_method(method=method, url=url)
         to = jsonpath.jsonpath(r, "$..token")[0]
         headers = {"Content-Type": "application/json;charset=UTF-8",
                    "token": to
                    }
 
         # 发送查询请求
-        response = Sendmethon.send_method(method=self.method, url=self.url, headers=headers, data=data)
+        response = Sendmethod.send_method(method=self.method, url=self.url, headers=headers, data=data)
         return response
 
     def getname(self, data):  # 获取查询结果name值
