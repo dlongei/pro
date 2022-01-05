@@ -1,4 +1,4 @@
-from common.send_method import Sendmethon
+from common.send_method import Sendmethod
 from common.get_keyword import GetKeyword
 import jsonpath
 
